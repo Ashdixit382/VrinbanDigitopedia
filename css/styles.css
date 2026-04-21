@@ -749,9 +749,12 @@ ul {
 .portfolio-slider__viewport {
   overflow: visible;
   border-radius: 24px;
-  min-height: 46rem;
+  min-height: 38rem;
   position: relative;
   isolation: isolate;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
 .portfolio-slider__viewport::before {
@@ -775,7 +778,7 @@ ul {
   position: absolute;
   left: 50%;
   top: 0;
-  width: min(20rem, 76vw);
+  width: min(24rem, 84vw);
   overflow: hidden;
   padding: 0;
   border-radius: 16px;
@@ -806,22 +809,22 @@ ul {
 }
 
 .portfolio-card.is-prev {
-  transform: translateX(calc(-50% - 15.5rem)) scale(0.9) rotateY(8deg);
+  transform: translateX(calc(-50% - 17.5rem)) scale(0.9) rotateY(8deg);
 }
 
 .portfolio-card.is-next {
-  transform: translateX(calc(-50% + 15.5rem)) scale(0.9) rotateY(-8deg);
+  transform: translateX(calc(-50% + 17.5rem)) scale(0.9) rotateY(-8deg);
 }
 
 .portfolio-card.is-hidden-left {
   opacity: 0.28;
-  transform: translateX(calc(-50% - 27rem)) scale(0.78);
+  transform: translateX(calc(-50% - 30rem)) scale(0.78);
   z-index: 2;
 }
 
 .portfolio-card.is-hidden-right {
   opacity: 0.28;
-  transform: translateX(calc(-50% + 27rem)) scale(0.78);
+  transform: translateX(calc(-50% + 30rem)) scale(0.78);
   z-index: 2;
 }
 
@@ -829,7 +832,7 @@ ul {
 .video-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 9 / 16; /* reel format */
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 16px;
 }
@@ -859,11 +862,11 @@ ul {
 }
 
 .portfolio-card.is-prev:hover {
-  transform: translateX(calc(-50% - 15.5rem)) scale(0.92) rotateY(8deg);
+  transform: translateX(calc(-50% - 17.5rem)) scale(0.92) rotateY(8deg);
 }
 
 .portfolio-card.is-next:hover {
-  transform: translateX(calc(-50% + 15.5rem)) scale(0.92) rotateY(-8deg);
+  transform: translateX(calc(-50% + 17.5rem)) scale(0.92) rotateY(-8deg);
 }
 
 .portfolio-slider__nav {
@@ -955,7 +958,7 @@ ul {
   }
 
   .portfolio-slider__viewport {
-    min-height: 40rem;
+    min-height: 34rem;
   }
 
   .portfolio-slider__nav--prev {
@@ -967,25 +970,25 @@ ul {
   }
 
   .portfolio-card {
-    width: min(17rem, 82vw);
+    width: min(20rem, 86vw);
   }
 
   .portfolio-card.is-prev {
-    transform: translateX(calc(-50% - 9.75rem)) scale(0.82);
+    transform: translateX(calc(-50% - 11rem)) scale(0.82);
     opacity: 0.45;
   }
 
   .portfolio-card.is-next {
-    transform: translateX(calc(-50% + 9.75rem)) scale(0.82);
+    transform: translateX(calc(-50% + 11rem)) scale(0.82);
     opacity: 0.45;
   }
 
   .portfolio-card.is-prev:hover {
-    transform: translateX(calc(-50% - 9.75rem)) scale(0.84);
+    transform: translateX(calc(-50% - 11rem)) scale(0.84);
   }
 
   .portfolio-card.is-next:hover {
-    transform: translateX(calc(-50% + 9.75rem)) scale(0.84);
+    transform: translateX(calc(-50% + 11rem)) scale(0.84);
   }
 
   .portfolio-card.is-hidden-left,
